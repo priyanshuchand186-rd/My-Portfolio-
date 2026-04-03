@@ -581,16 +581,26 @@ footer::before{content:'';position:absolute;inset:0;background:linear-gradient(9
           </a>
         </div>
       </div>
-      <form class="cf rv-r" onsubmit="handleForm(event)">
-        <div class="fg"><label class="fl">// Your Name</label><input type="text" class="fi" placeholder="Jane Smith" required/></div>
-        <div class="fg"><label class="fl">// Email Address</label><input type="email" class="fi" placeholder="jane@example.com" required/></div>
-        <div class="fg"><label class="fl">// Message</label><textarea class="fta" placeholder="Let's collaborate on something data-driven..." required></textarea></div>
-        <button type="submit" class="fbtn"><span>SEND_MESSAGE &#8594;</span></button>
-      </form>
-    </div>
+   <form class="cf rv-r" action="https://formspree.io/f/mjqwqkv" method="POST">
+  <div class="fg">
+    <label class="fl">// Your Name</label>
+    <input type="text" class="fi" name="name" placeholder="Jane Smith" required>
+  </div>
+  <div class="fg">
+    <label class="fl">// Email Address</label>
+    <input type="email" class="fi" name="email" placeholder="jane@example.com" required>
+  </div>
+  <div class="fg">
+    <label class="fl">// Message</label>
+    <textarea class="fta" name="message" placeholder="Let's collaborate on something data-driven..." required></textarea>
+  </div>
+  <button type="submit" class="fbtn">
+    <span>SEND_MESSAGE →</span>
+  </button>
+ </form>
+ </div>
   </div>
 </section>
-
 <!-- FOOTER -->
 <footer>
   <div class="ft">Designed &amp; Built by <span>Priyanshu Chand</span> &nbsp;|&nbsp; 2025 &nbsp;|&nbsp; Data First &#128202;</div>
